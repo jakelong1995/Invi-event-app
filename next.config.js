@@ -1,19 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    domains: ["utfs.io", "uploadthing.com"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "example.com",
-        port: "",
-        pathname: "/**",
+        hostname: "utfs.io",
       },
       {
         protocol: "https",
-        hostname: "anotherdomain.com",
-        port: "",
-        pathname: "/**",
+        hostname: "uploadthing.com",
       },
     ],
   },
 };
+
+module.exports = nextConfig;
